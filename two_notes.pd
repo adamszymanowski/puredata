@@ -1,0 +1,22 @@
+#N canvas 546 73 450 300 12;
+#X obj 17 20 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#N canvas 1057 147 450 300 two_notes 1;
+#X obj 104 60 inlet;
+#X obj 104 84 metro 500;
+#X obj 104 108 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 104 128 sel 0 1;
+#X msg 104 152 60;
+#X msg 139 152 67;
+#X floatatom 104 180 5 0 0 0 - - -;
+#X obj 104 203 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X restore 17 40 pd two_notes;
